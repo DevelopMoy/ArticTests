@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +21,22 @@
     <li><a href="#">Contacto</a></li>
     <li><a href="#">Acerca de</a></li>
   </ul>
-  <button type="button" class="btn btn-outline-primary login">Iniciar Sesión</button>
+    <form action="public_html/loginL.php" method="post">
+        <?php
+        session_start();
+
+        $loginT="";
+        if (isset($_SESSION["user"])&&!empty($_SESSION["user"])){
+            $loginT="Cerrar Sesión";
+            echo "<input type='hidden' value='cerrSec' name='loginType'>";
+        }else{
+            $loginT="Iniciar Sesión";
+            echo "<input type='hidden' value='inicSec' name='loginType'>";
+        }
+        ?>
+         <button type='submit'  class='btn btn-outline-primary login'><?php echo $loginT ?></button>;
+    </form>
+
 </nav>
 <section id="seccion1" >
   <div id="texto1">
