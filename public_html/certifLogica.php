@@ -17,11 +17,13 @@
     }else{
         if (!fueRealizado($_SESSION["user"],$archivoDatos)){
             //GUARDAR EN REALIZADOS
-            if (!fwrite($archivoDatos,$_SESSION["user"]."\n")){
+            //                                                 **********        DESCOMENTAR          **************
+            //                                                     ESTE IF AL TERMINAR DE DESARROLLAR EL EXAMEN
+            /*if (!fwrite($archivoDatos,$_SESSION["user"]."\n")){
                 echo "ERROR AL ESCRIBIR ARCHIVO TEST REALIZADOS";
-            }
+            }*/
             //PUEDE REALIZAR EL EXAMEN
-            echo "PUEDES REALIZAR TU EXAMEN ".$_SESSION["user"];
+            header("Location: examen.php");
         }else{
             // YA FUE REALIZADO
             header("Location: certificaciones.php");
