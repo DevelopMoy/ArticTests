@@ -1,5 +1,6 @@
 <?php
 session_start();
+require "certifLogica.php";
 ?>
 
 <!DOCTYPE html>
@@ -17,14 +18,55 @@ session_start();
         <img id=logoNav src="img/Copia de logoSinIceberg.png" alt="logo">
         <h1>Examen de certificación JAVA EE</h1>
         <form action="">
-            <button type="button" class="btn-lg btn-outline-danger">Terminar</button>  
+            <button type="button" id="botonEnviar" class="btn-lg btn-outline-danger">Terminar</button>
         </form>
      </nav>
 
+    <form id="areaExamen" action="revExamen.php" method="post">
+        <?php
+            $preguntas = ["t1","t2","t3","t4","t5","t6","t7"];
+            $preguntasCod=["c1","c2","c3","c4","c5","c6","c7"];
+            $contador=0;
+            shuffle($preguntas);
+            shuffle($preguntasCod);
+            if (!$archivoDatos = fopen("../data/preguntTeor.txt","a+")){
+                echo "No se ha podido abrir el archivo";
+            }else{
+                while ($contador<6){
+                    if ($contador<3){//TEORIA
+                        $preguntaDato=array_pop($preguntas);
+                    }else{//CODIGO
+                        $preguntaDato=array_pop($preguntasCod);
+                    }
+                    rewind($archivoDatos);
+                    while (!feof($archivoDatos)){
+                        $lineaArch=fgets($archivoDatos); //TIENE EL ID
+                        $lineaArch=substr($lineaArch,0,strlen($lineaArch)-1);
+                        if ($lineaArch==$preguntaDato){
+                            $idPregunta=$lineaArch;
+                            echo "<h3>Pregunta #".($contador+1)."</h3>";
+                            $lineaArch=fgets($archivoDatos);
+                            echo "<p>".$lineaArch."</p>";
+                            echo "<input type='hidden' name='idPreg".($contador+1)."' value='".$idPregunta."'>";
+                            for ($j=1;$j<=4;$j++){
+                                $lineaArch=fgets($archivoDatos);
+                                echo "<label for ='".$j."rb'>".$lineaArch."</label>";
+                                echo "<input type='radio' id='".$j."rb' name='".($contador+1)."nm' value='".$j."'>";
+                            }
+                            break;
+                        }
+                    }
+                    $contador++;
+                }
+                fclose($archivoDatos);
+            }
 
+        ?>
+
+    </form>
 
     <footer id='footer-exam'>
-       <?php
+        <?php
             $nombre=substr($_SESSION["nombre"],0);
             $varAux= strlen($nombre)-1;
             for ($i=0;$i<strlen($nombre);$i++){
@@ -35,7 +77,15 @@ session_start();
             }
             $nombre=substr($nombre,0,$varAux);
         ?>
-        <h1>Exito, estas a un paso de certificarte.</h1>
+        <h1><?php echo $nombre ?> Exito! Estas a un paso de certificarte.</h1>
     </footer>
+
+    <script>
+        formExamen= document.querySelector("#areaExamen");
+        botonEnviar=document.querySelector("#botonEnviar");
+        botonEnviar.onclick=()=>{
+            formExamen.submit();
+        };
+    </script>
 </body>
 </html>
