@@ -24,7 +24,7 @@ session_start();
 
 
     <footer id='footer-exam'>
-        <h1>Exito!, estas a un paso de certificarte.</h1>
+        <h1>Exito, estas a un paso de certificarte.</h1>
     </footer>
 </body>
 </html>
