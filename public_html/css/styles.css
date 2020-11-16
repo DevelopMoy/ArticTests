@@ -63,7 +63,8 @@ nav {
 }
 
 #areaExamen{
-    margin-top: 120px;
+
+    margin-top: 110px;
 }
 
 .login{
@@ -201,7 +202,6 @@ footer p{
     flex-basis: 100%;
 }
 #footer-exam{
-    margin-top: 10rem;
 
 }
 #seccion1-1{
