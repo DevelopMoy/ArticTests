@@ -13,9 +13,18 @@ session_start();
     <script src="https://kit.fontawesome.com/66b3831846.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav id="nav-exam">
+        <img id=logoNav src="img/Copia de logoSinIceberg.png" alt="logo">
+        <h1>Examen de certificación JAVA EE</h1>
+        <form action="">
+            <button type="button" class="btn-lg btn-outline-danger">Terminar</button>  
+        </form>
+     </nav>
 
 
 
-
+    <footer id='footer-exam'>
+        <h1>Exito!, estas a un paso de certificarte.</h1>
+    </footer>
 </body>
 </html>

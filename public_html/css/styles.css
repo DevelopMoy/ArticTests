@@ -9,7 +9,6 @@ padding: 15px 0 15px;
 }
 
 nav{
-
     background-color: #e3f2fd;
     display:flex;
     flex-direction:row;
@@ -18,7 +17,6 @@ nav{
     align-items:center;
     align-content:space-between;
     width: 100%;
-
 }
 body{
     box-sizing: border-box;
@@ -27,7 +25,7 @@ body{
 }
 
 nav ul{
-//top: 30px;
+
     list-style:none;
     margin: 0;
     padding:0;
@@ -48,7 +46,6 @@ nav ul li a{
 nav ul li{
     align-self: flex-end;
 }
-
 nav {
     background-color: #f8f8f8;
     padding: 1% 0 1%;
@@ -58,6 +55,11 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     box-shadow: -1px 34px 49px -28px rgba(0,0,0,0.41);
+}
+#nav-exam{   
+    justify-content: space-around;
+    position: fixed;
+    top:0;
 }
 .login{
     margin-left: 30%;
@@ -173,6 +175,7 @@ footer{
     color: white;
 
 }
+
 footer div{
     flex-basis: 20%;
     margin: 1rem;
@@ -191,6 +194,10 @@ footer div h2{
 footer p{
     text-align: center;
     flex-basis: 100%;
+}
+#footer-exam{
+    margin-top: 10rem;
+
 }
 #seccion1-1{
     display: flex;
