@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfbbd4c6-f83c-47a6-9110-274ba668f64c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public_html/examen.php" afterDir="false" />
-    </list>
+    <list default="true" id="cfbbd4c6-f83c-47a6-9110-274ba668f64c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +77,7 @@
       <workItem from="1605412330205" duration="37000" />
       <workItem from="1605412407161" duration="14734000" />
       <workItem from="1605491232373" duration="4479000" />
-      <workItem from="1605498250750" duration="9422000" />
+      <workItem from="1605498250750" duration="10250000" />
     </task>
     <servers />
   </component>
