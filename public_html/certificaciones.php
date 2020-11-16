@@ -39,14 +39,20 @@
         <p>La Puntuacion minima para aprobar esta certificaciones del 70%</p>
         <h6>Total de Preguntas</h6>
         <p>14 Preguntas</p>
-        <h6>Tiempo paa terminar examen</h6>
+        <h6>Tiempo para terminar examen</h6>
         <p>30 min.</p>
         <h6>Costo</h6>
         <p>$15,000 MXM</p>
         <h6>Fechas</h6>
         <p>Dia 15 de cada mes</p>
-        <form action="">
-            <button type="button" class="btn btn-outline-info">Comenzar</button>
+        <form action="certifLogica.php" method="post">
+            <?php
+                if (isset($_SESSION["nombre"])&&!empty($_SESSION["nombre"])&&!is_null($_SESSION["nombre"])){
+                    echo "<button type='submit' class='btn btn-outline-info'>Comenzar</button>";
+                }else{
+                    echo "<a class='btn btn-outline-info' href='loginView.php'>Inicia Sesion para comenzar</a>";
+                }
+            ?>
         </form>
     </div>
 </section>
@@ -66,14 +72,20 @@
         <p>La Puntuacion minima para aprobar esta certificaciones del 90%</p>
         <h6>Total de Preguntas</h6>
         <p> 20 Preguntas</p>
-        <h6>Tiempo paa terminar examen</h6>
+        <h6>Tiempo para terminar examen</h6>
         <p>60 min.</p>
         <h6>Costo</h6>
         <p>$30,000 MXM</p>
         <h6>Fechas</h6>
         <p>Dia 30 de cada mes</p>
-        <form action="">
-            <button type="button" class="btn btn-outline-info">Comenzar</button>
+        <form action="" method="post">
+            <?php
+            if (isset($_SESSION["nombre"])&&!empty($_SESSION["nombre"])&&!is_null($_SESSION["nombre"])){
+                echo "<button type='submit' class='btn btn-outline-info'>Comenzar</button>";
+            }else{
+                echo "<a class='btn btn-outline-info' href='loginView.php'>Inicia Sesion para comenzar</a>";
+            }
+            ?>
         </form>
     </div>
 </section>
@@ -93,14 +105,20 @@
         <p>La Puntuacion minima para aprobar esta certificaciones del 95%</p>
         <h6>Total de Preguntas</h6>
         <p>35 Preguntas</p>
-        <h6>Tiempo paa terminar examen</h6>
+        <h6>Tiempo para terminar examen</h6>
         <p>90 min.</p>
         <h6>Costo</h6>
         <p>$45,000 MXM</p>
         <h6>Fechas</h6>
         <p>Esta certificacion se lleva alcabo por petición del cliente, tiempo de respuesta aproximado 10 días habiles despues de la solicitud</p>
-        <form action="">
-            <button type="button" class="btn btn-outline-info">Comenzar</button>
+        <form action="" method="post">
+            <?php
+            if (isset($_SESSION["nombre"])&&!empty($_SESSION["nombre"])&&!is_null($_SESSION["nombre"])){
+                echo "<button type='submit' class='btn btn-outline-info'>Comenzar</button>";
+            }else{
+                echo "<a class='btn btn-outline-info' href='loginView.php'>Inicia Sesion para comenzar</a>";
+            }
+            ?>
         </form>
     </div>
 </section>

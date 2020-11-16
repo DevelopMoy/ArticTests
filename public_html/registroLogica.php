@@ -57,5 +57,5 @@
             die();
         }
     }
-
+    fclose($archivoDatos);
 

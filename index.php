@@ -76,7 +76,7 @@ session_start();
   <div class="card-body">
     <h5 class="card-title">JAVA EE</h5>
     <p class="card-text">Obten todas las habilidades necesarias para poder desarrollar proyectos para grandes empresas en lenguaje JAVA, aplica hoy mismo.</p>
-    <a href="#" class="btn btn-primary">Aplicar</a>
+    <a href="public_html/certificaciones.php#seccion2-1" class="btn btn-primary">Aplicar</a>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
@@ -84,7 +84,7 @@ session_start();
   <div class="card-body">
     <h5 class="card-title">Linux Bash</h5>
     <p class="card-text">Obten todas las habilidades necesarias para poder desarrollar proyectos para grandes empresas en lenguaje BASH, aplica hoy mismo.</p>
-    <a href="#" class="btn btn-primary">Aplicar</a>
+    <a href="public_html/certificaciones.php#seccion3-1" class="btn btn-primary">Aplicar</a>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
@@ -92,7 +92,7 @@ session_start();
   <div class="card-body">
     <h5 class="card-title">Lenguaje ASM</h5>
     <p class="card-text">Obten todas las habilidades necesarias para poder desarrollar proyectos para grandes empresas en lenguaje ensamblador, aplica hoy mismo.</p>
-    <a href="#" class="btn btn-primary">Aplicar</a>
+    <a href="public_html/certificaciones.php#seccion4-1" class="btn btn-primary">Aplicar</a>
   </div>
 </div>
 </section>
