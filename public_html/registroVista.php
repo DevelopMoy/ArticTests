@@ -13,31 +13,9 @@
     <script src="https://kit.fontawesome.com/66b3831846.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="" style="" >
-    <a class="mainLogo" href="#"><img id=logoNav src="img/Copia de logoSinIceberg.png" alt="logo"></a>
-    <ul class="list-nav">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="public_html/certificaciones.php">Certificaciones</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="public_html/conocenos.php">Acerca de</a></li>
-    </ul>
-    <form action="loginL.php" method="post">
-        <?php
-
-        $loginT="";
-        if (isset($_SESSION["user"])&&!empty($_SESSION["user"])){
-            $loginT="Cerrar Sesión";
-
-            echo "<input type='hidden' value='cerrSec' name='loginType'>";
-        }else{
-            $loginT="Iniciar Sesión";
-            echo "<input type='hidden' value='inicSec' name='loginType'>";
-        }
-        ?>
-        <button type='submit'  class='btn btn-outline-primary login'><?php echo $loginT ?></button>;
-    </form>
-
-</nav>
+<?php
+    require "nav.php";
+?>
 
 <section id="registro">
     <form action="registroLogica.php" method="post">
