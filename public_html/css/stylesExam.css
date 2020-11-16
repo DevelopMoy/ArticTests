@@ -1,0 +1,38 @@
+#areaExamen{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ask-title, .ask{
+    flex-basis: 100%;
+}
+.ask-title{
+    padding-bottom: 20px;
+    padding-top:  40px;
+    margin-top: 15px; 
+
+}
+.ask-title:nth-child(1){
+    margin-top: 0;
+}
+.ask{
+    padding-bottom: 10PX;
+}
+.answer{
+    flex-basis: 98%;
+}
+.seccionExamen{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: rgba( 35, 103, 148 ,1) 12px solid;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    flex-basis: 100%;
+}
+#areaExamen:nth-last-child(){
+    margin-bottom: 0;
+}
