@@ -24,6 +24,17 @@ session_start();
 
 
     <footer id='footer-exam'>
+       <?php
+            $nombre=substr($_SESSION["nombre"],0);
+            $varAux= strlen($nombre)-1;
+            for ($i=0;$i<strlen($nombre);$i++){
+                if ($nombre[$i]=='_'){
+                    $varAux=$i;
+                    break;
+                }
+            }
+            $nombre=substr($nombre,0,$varAux);
+        ?>
         <h1>Exito, estas a un paso de certificarte.</h1>
     </footer>
 </body>
