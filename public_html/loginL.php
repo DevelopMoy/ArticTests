@@ -1,5 +1,4 @@
 <?php
-    session_start();
     if ($_POST["loginType"]=="inicSec"){
         header("Location: loginView.php");
     }else{

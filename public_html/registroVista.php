@@ -18,27 +18,30 @@
 ?>
 
 <section id="registro">
-    <form action="registroLogica.php" method="post">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Direccion de email</label>
-            <input type="email" name="emailLg" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese email" required>
-            <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tus datos personales</small>
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Contraseña</label>
-            <input type="password" name="passLg" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" required>
-        </div>
-        <div class="form-group">
-            <label for="nombreId">Nombre</label>
-            <input type="text" name="nombLg" class="form-control" id="nombreId" placeholder="Nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="nombreUsId">Nombre de Usuario</label>
-            <input type="text" name="userLg" class="form-control" id="nombreUsId" placeholder="Nombre de usuario" required>
-        </div>
+    <div id="form-registro">
+        <h2>Ingresa tus datos</h2>
+        <form action="registroLogica.php" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Direccion de email</label>
+                <input type="email" name="emailLg" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese email" required>
+                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tus datos personales</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input type="password" name="passLg" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" required>
+            </div>
+            <div class="form-group">
+                <label for="nombreId">Nombre</label>
+                <input type="text" name="nombLg" class="form-control" id="nombreId" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="nombreUsId">Nombre de Usuario</label>
+                <input type="text" name="userLg" class="form-control" id="nombreUsId" placeholder="Nombre de usuario" required>
+            </div>
 
-        <button type="submit" class="btn btn-primary">Registrarse</button>
-    </form>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+    </div>
 </section>
 
 

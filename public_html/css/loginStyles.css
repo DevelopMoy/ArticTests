@@ -1,4 +1,31 @@
 #iniciarSesion {
-    background-color: red;
-    height: 40%;
+    border-top: rgba( 35, 103, 148 ,1) solid 9px;
+   border-bottom: rgba( 35, 103, 148 ,1) solid 9px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url("../img/fondo-login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#form-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4%;
+    width: 350px;
+    background-color: rgba(255, 255, 255, .6);
+    padding: 2rem;
+}
+#form-login form button{
+    text-align: center;
+}
+#form-login img{
+    width: 50%;
+}
+#form-login span{
+    margin-top: 25px;
 }

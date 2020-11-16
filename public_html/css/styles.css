@@ -4,7 +4,6 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 .mainLogo{
-//
 padding: 15px 0 15px;
     margin-right: 15px;
 }
@@ -223,8 +222,8 @@ footer p{
     margin:  3% 15%;
 }
 #seccion2-1{
-    border-top: rgba(75, 119, 190, 1) solid 9px;
-    border-bottom: rgba(75, 119, 190, 1) solid 9px;
+    border-top: rgba( 35, 103, 148 ,1) solid 9px;
+    border-bottom: rgba( 35, 103, 148 ,1) solid 9px;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -250,8 +249,8 @@ footer p{
     width:auto;
 }
 #seccion3-1{
-    border-top: rgba(75, 119, 190, 1) solid 9px;
-    border-bottom: rgba(75, 119, 190, 1) solid 9px;
+    border-top: rgba( 35, 103, 148 ,1) solid 9px;
+    border-bottom: rgba( 35, 103, 148 ,1) solid 9px;
     display:flex;
     flex-direction: row-reverse;
     flex-wrap:wrap;
@@ -281,8 +280,8 @@ footer p{
     width:auto;
 }
 #seccion4-1{
-    border-top: rgba(75, 119, 190, 1) solid 9px;
-    border-bottom: rgba(75, 119, 190, 1) solid 9px;
+    border-top: rgba( 35, 103, 148 ,1) solid 9px;
+    border-bottom: rgba( 35, 103, 148 ,1) solid 9px;
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -308,8 +307,8 @@ footer p{
     width:auto;
 }
 #seccion1-3{
-    border-top: rgba(75, 119, 190, 1) solid 9px;
-    border-bottom: rgba(75, 119, 190, 1) solid 9px;
+    border-top: rgba( 35, 103, 148 ,1) solid 9px;
+    border-bottom: rgba( 35, 103, 148 ,1) solid 9px;
     display: flex;
     justify-content: center;
     background-image: url("../img/fondo-conocenos1.jpg");
@@ -354,8 +353,8 @@ footer p{
     color: white;
 }
 #seccion2-3{
-    border-top: rgba(75, 119, 190, 1) solid 9px;
-    border-bottom: rgba(75, 119, 190, 1) solid 9px;
+    border-top: rgba( 35, 103, 148 ,1) solid 9px;
+    border-bottom: rgba( 35, 103, 148 ,1) solid 9px;
     display: flex;
     justify-content: flex-start;
     background-image: url("../img/fondo-conocenos2.jpg");
