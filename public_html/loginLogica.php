@@ -53,7 +53,7 @@
             $cont=0;
         }
         if ($band){
-            header("Location: loginView.php");
+            header("Location: loginView.php?error=true");
         }
 
     }

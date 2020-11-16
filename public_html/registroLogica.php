@@ -53,7 +53,7 @@
             header("Location: ../index.php");
             die();
         }else{
-            header("Location: registroVista.php");
+            header("Location: registroVista.php?error=true");
             die();
         }
     }
