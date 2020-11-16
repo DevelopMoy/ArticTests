@@ -50,10 +50,10 @@
             if (!fwrite($archivoDatos,$datosUser)){
                 echo "ERROR AL ESCRIBIR ARCHIVO";
             }
-            header("Location: /Examen_Parcial_2/index.php");
+            header("Location: ../index.php");
             die();
         }else{
-            header("Location: /Examen_Parcial_2/public_html/registroVista.php");
+            header("Location: registroVista.php");
             die();
         }
     }

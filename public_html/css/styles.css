@@ -1,16 +1,16 @@
 #logoNav{
-   width: 150px;
-  
+    width: 150px;
+
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 .mainLogo{
-    //
-    padding: 15px 0 15px;
+//
+padding: 15px 0 15px;
     margin-right: 15px;
 }
 
 nav{
-    
+
     background-color: #e3f2fd;
     display:flex;
     flex-direction:row;
@@ -18,7 +18,8 @@ nav{
     justify-content:center;
     align-items:center;
     align-content:space-between;
-    
+    width: 100%;
+
 }
 body{
     box-sizing: border-box;
@@ -27,12 +28,12 @@ body{
 }
 
 nav ul{
-    //top: 30px;
+//top: 30px;
     list-style:none;
     margin: 0;
     padding:0;
     display: flex;
-   justify-content: center;
+    justify-content: center;
     flex-direction: row;
 }
 
@@ -57,9 +58,18 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    box-shadow: -1px 34px 49px -28px rgba(0,0,0,0.41);
 }
 .login{
-    margin-left: 50%;
+    margin-left: 30%;
+}
+
+.login i {
+    margin-right: 10px;
+}
+
+.login span {
+    margin-right: 20px;
 }
 
 nav ul a:hover{
@@ -72,12 +82,12 @@ nav ul a:hover{
     display: flex;
     justify-content: flex-start;
     background-image: url("../img/fondo-seccion-1.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed;
-  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
-     width: 100%;
+    width: 100%;
     height: 450px;
     color: white;
     align-content: center;
@@ -91,6 +101,9 @@ nav ul a:hover{
 }
 #seccion1 div *{
     margin:  3% 15%;
+}
+#seccion1 div h1{
+    margin-top: 15%;
 }
 #seccion1 div a{
     text-align: center;
@@ -116,19 +129,19 @@ nav ul a:hover{
     text-align: center;
     flex-basis: 100%;
     margin-bottom: 50px;
-    
+
 }
 #seccion3{
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: url("../img/fondo-seccion-3.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed;
-  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     align-items: flex-end;
-     width: 100%;
+    width: 100%;
     height: 500px;
     color: white;
 
@@ -157,9 +170,9 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
     align-content: flex-start;
-    background-color: #f8f8f8;
+    background-color:rgba(36, 37, 42, 1);
+    color: white;
 
-  background-color: #f8f8f8;
 }
 footer div{
     flex-basis: 20%;
@@ -167,22 +180,29 @@ footer div{
 }
 footer img{
     margin-right: 8%;
-    width: 300px;
+    height: 10rem;
 }
 footer div iframe{
-    width: 250px;
-    height: 250px;
+    height: 10rem;
+    width: 15rem;
+}
+footer div h2{
+    font-size: 1.5rem;
+}
+footer p{
+    text-align: center;
+    flex-basis: 100%;
 }
 #seccion1-1{
     display: flex;
     justify-content: center;
     background-image: url("../img/fondo-certificacion.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed;
-  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
-     width: 100%;
+    width: 100%;
     height: 450px;
     color: white;
     align-content: center;
@@ -209,29 +229,223 @@ footer div iframe{
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
-    align-items:stretch;
+    align-items:center;
     align-content:stretch;
 }
-#seccion2-1 .logo-c img{
-    padding: 0;
-    height:100%;
-    width:100%;
-}
+
 #seccion2-1 .logo-c{
     margin: 40px;
     padding: 0;
     order:0;
-  flex:0 1 20%;
-  align-self:auto;
-  height:auto;
-  width:auto;
+    flex:0 1 20%;
+
 
 }
 #seccion2-1 .info-c{
     margin: 40px;
     order:1;
-  flex:0 1 40%;
-  align-self:auto;
-  height:auto;
-  width:auto;
+    flex:0 1 40%;
+    align-self:auto;
+    height:auto;
+    width:auto;
+}
+#seccion3-1{
+    border-top: rgba(75, 119, 190, 1) solid 9px;
+    border-bottom: rgba(75, 119, 190, 1) solid 9px;
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    align-content:stretch;
+}
+.logo-c img{
+    height: 20rem;
+    width: auto;
+    box-shadow: 1px 24px 44px -10px rgba(0,0,0,0.49);
+}
+#seccion3-1 .logo-c{
+    margin: 40px;
+    padding: 0;
+    order:0;
+    flex:0 1 20%;
+
+
+}
+#seccion3-1 .info-c{
+    margin: 40px;
+    order:1;
+    flex:0 1 40%;
+    align-self:auto;
+    height:auto;
+    width:auto;
+}
+#seccion4-1{
+    border-top: rgba(75, 119, 190, 1) solid 9px;
+    border-bottom: rgba(75, 119, 190, 1) solid 9px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    align-content:stretch;
+}
+
+#seccion4-1 .logo-c{
+    margin: 40px;
+    padding: 0;
+    order:0;
+    flex:0 1 20%;
+
+
+}
+#seccion4-1 .info-c{
+    margin: 40px;
+    order:1;
+    flex:0 1 40%;
+    align-self:auto;
+    height:auto;
+    width:auto;
+}
+#seccion1-3{
+    border-top: rgba(75, 119, 190, 1) solid 9px;
+    border-bottom: rgba(75, 119, 190, 1) solid 9px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/fondo-conocenos1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    width: 100%;
+    height: 450px;
+    color: white;
+    align-content: center;
+}
+#seccion1-3 div{
+    flex-basis: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(92, 151, 191, .7)
+}
+#seccion1-3 div h1{
+
+    font-size: 48pt;
+}
+#seccion1-3 div *{
+    margin:  3% 15%;
+}
+.secc-auxiliar{
+    height: 25rem;
+
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:stretch;
+    align-content:flex-start;
+    background-color:rgba(36, 37, 42, 1);
+}
+.secc-auxiliar *{
+    text-align: center;
+    color: white;
+}
+#seccion2-3{
+    border-top: rgba(75, 119, 190, 1) solid 9px;
+    border-bottom: rgba(75, 119, 190, 1) solid 9px;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url("../img/fondo-conocenos2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    width: 100%;
+    height: 450px;
+    color: white;
+    align-content: center;
+}
+#seccion2-3 div{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(44, 130, 201, .5);
+}
+#seccion2-3 div *{
+    margin:  3% 15%;
+}
+#seccion2-3 div h1{
+    margin-top: 15%;
+}
+#seccion2-4{
+    border-top: rgba(75, 119, 190, 1) solid 9px;
+    border-bottom: rgba(75, 119, 190, 1) solid 9px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-content: center;
+    color: white;
+    width: 100%;
+    height: 450px;
+    background-image: url("../img/fondo-conocenos2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#seccion2-4 div{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(44, 130, 201, .5);
+}
+#seccion2-4 div *{
+    margin:  3% 15%;
+}
+#seccion2-4 div h1{
+    margin-top: 15%;
+}
+
+
+#form{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-content: flex-start;
+    height: 650px;
+    background-image: url("../img/contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#form div{
+    padding: 5rem;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(44, 130, 201, .5);
+}
+#form div h1{
+    margin-bottom: 2rem;
+}
+#form div input[type="text"]{
+    width: 450px;
+    padding: 5px;
+    display: block;
+    margin: 2rem 0;
+    border: solid white 5px;
+}
+#form button{
+    margin-top: 4rem;
+}
+textarea .form-control{
+    width: 50px;
 }

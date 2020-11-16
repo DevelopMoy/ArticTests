@@ -15,26 +15,48 @@ session_start();
 <body>
 <nav class="" style="" >
   <a class="mainLogo" href="#"><img id=logoNav src="public_html/img/Copia de logoSinIceberg.png" alt="logo"></a>
-  <ul class="list-nav">
-    <li><a href="#">Inicio</a></li>
-    <li><a href="public_html/certificaciones.php">Certificaciones</a></li>
-    <li><a href="#">Contacto</a></li>
-    <li><a href="#">Acerca de</a></li>
-  </ul>
-    <form action="public_html/loginL.php" method="post">
+    <ul class="list-nav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="public_html/certificaciones.php">Certificaciones</a></li>
+        <li><a href="public_html/contacto.php">Contacto</a></li>
+        <li><a href="public_html/conocenos.php">Acerca de</a></li>
+    </ul>
+    <form action="public_html/loginL.php" class="login" method="post">
         <?php
         session_start();
-
+        function saludo (){
+            $nombre=substr($_SESSION["nombre"],0);
+            $varAux= strlen($nombre)-1;
+            for ($i=0;$i<strlen($nombre);$i++){
+                if ($nombre[$i]=='_'){
+                    $varAux=$i;
+                    break;
+                }
+            }
+            $nombre=substr($nombre,0,$varAux);
+            $var = intval(date('H'));
+            if ($var>=12&&$var<=19){
+                return "Buenas tardes ".$nombre;
+            }else{
+                if ($var>19||$var<=4){
+                    return "Buenas noches ".$nombre;
+                }else{
+                    return "Buenos dias ".$nombre;
+                }
+            }
+        }
         $loginT="";
+
         if (isset($_SESSION["user"])&&!empty($_SESSION["user"])){
             $loginT="Cerrar Sesión";
+            echo "<span>".saludo()."</span><i class='fas fa-user'></i><span>".$_SESSION["user"]."</span>";
             echo "<input type='hidden' value='cerrSec' name='loginType'>";
         }else{
             $loginT="Iniciar Sesión";
             echo "<input type='hidden' value='inicSec' name='loginType'>";
         }
         ?>
-         <button type='submit'  class='btn btn-outline-primary login'><?php echo $loginT ?></button>;
+         <button type='submit'  class='btn btn-outline-primary'><?php echo $loginT ?></button>
     </form>
 
 </nav>
@@ -74,14 +96,14 @@ session_start();
   </div>
 </div>
 </section>
-<secction id="seccion3">
+<section id="seccion3">
 <div id="texto3">
     <h1>Capacitate con nosotros</h1>
       <p>Contamos con un amplio catálogo de cursos elaborados por los mejores expertos en el ámbito.
       </p>
       <a href="#seccion2">Conoce los planes</a>
   </div>
-</secction>
+</section>
   <footer>
   <img src="public_html/img/LogoPrincipal.png" alt="">
     <div id="verif">

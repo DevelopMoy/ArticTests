@@ -20,18 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfbbd4c6-f83c-47a6-9110-274ba668f64c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plantilla.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public_html/css/cssRegistros.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public_html/css/loginStyles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public_html/loginL.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public_html/loginLogica.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public_html/loginView.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public_html/registroLogica.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public_html/registroVista.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public_html/nav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Examen_Parcial_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Examen_Parcial_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datosUsuarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datosUsuarios.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/certificaciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/certificaciones.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/loginL.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/loginL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/loginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/loginView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/registroVista.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/registroVista.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/home/moy/Documents/ArticTests" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -84,6 +83,8 @@
       <workItem from="1605411993238" duration="219000" />
       <workItem from="1605412330205" duration="37000" />
       <workItem from="1605412407161" duration="14734000" />
+      <workItem from="1605491232373" duration="4479000" />
+      <workItem from="1605498250750" duration="334000" />
     </task>
     <servers />
   </component>
@@ -107,10 +108,14 @@
       <screen x="72" y="28" width="1848" height="1052" />
     </state>
     <state x="729" y="303" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.28.1848.1052@72.28.1848.1052" timestamp="1605411156174" />
-    <state x="791" y="479" width="359" height="145" key="NewPhpFileDialog" timestamp="1605418018408">
+    <state x="779" y="312" width="424" height="480" key="FileChooserDialogImpl" timestamp="1605491370641">
       <screen x="72" y="28" width="1848" height="1052" />
     </state>
-    <state x="791" y="479" width="359" height="145" key="NewPhpFileDialog/72.28.1848.1052@72.28.1848.1052" timestamp="1605418018408" />
+    <state x="779" y="312" width="424" height="480" key="FileChooserDialogImpl/72.28.1848.1052@72.28.1848.1052" timestamp="1605491370641" />
+    <state x="791" y="479" width="349" height="145" key="NewPhpFileDialog" timestamp="1605495507158">
+      <screen x="72" y="28" width="1848" height="1052" />
+    </state>
+    <state x="791" y="479" width="349" height="145" key="NewPhpFileDialog/72.28.1848.1052@72.28.1848.1052" timestamp="1605495507158" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1605419953222">
       <screen x="72" y="28" width="1848" height="1052" />
     </state>
