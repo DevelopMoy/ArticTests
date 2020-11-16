@@ -30,7 +30,7 @@
         <img src="img/logo-java.jpeg" class="card-img-top" alt="...">
     </div>
     <div class="info-c">
-        <h3>Certificado en JAVA EE</h3>
+        <h3>Certificado en JAVA SE</h3>
         <h6>Ventajas</h6>
         <ul>
             <li>Aumenta tu porfatolio</li>
@@ -47,15 +47,15 @@
         <p>$15,000 MXM</p>
         <h6>Fechas</h6>
         <p>Dia 15 de cada mes</p>
-        <form action="certifLogica.php" method="post">
+
             <?php
                 if (isset($_SESSION["nombre"])&&!empty($_SESSION["nombre"])&&!is_null($_SESSION["nombre"])){
-                    echo "<button type='submit' class='btn btn-outline-info'>Comenzar</button>";
+                    echo "<a href='examen.php'><button type='button' class='btn btn-outline-info'>Comenzar</button></a>";
                 }else{
                     echo "<a class='btn btn-outline-info' href='loginView.php'>Inicia Sesion para comenzar</a>";
                 }
             ?>
-        </form>
+
     </div>
 </section>
 <section id="seccion3-1">

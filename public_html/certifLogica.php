@@ -1,8 +1,6 @@
 <?php
-    session_start();
     function fueRealizado ($nombUsuario,$archivo){
         while (!feof($archivo)){
-
             $usuario=fgets($archivo);
             $usuario=substr($usuario,0,strlen($usuario)-1);
             if ($usuario==$nombUsuario){
@@ -23,7 +21,6 @@
                 echo "ERROR AL ESCRIBIR ARCHIVO TEST REALIZADOS";
             }*/
             //PUEDE REALIZAR EL EXAMEN
-            header("Location: examen.php");
         }else{
             // YA FUE REALIZADO
             header("Location: certificaciones.php");

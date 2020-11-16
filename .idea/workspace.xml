@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfbbd4c6-f83c-47a6-9110-274ba668f64c" name="Default Changelist" comment="" />
+    <list default="true" id="cfbbd4c6-f83c-47a6-9110-274ba668f64c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public_html/revExamen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/preguntCod.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/preguntTeor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/preguntTeor.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/certifLogica.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/certifLogica.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/certificaciones.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/certificaciones.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/examen.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/examen.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +86,7 @@
       <workItem from="1605412330205" duration="37000" />
       <workItem from="1605412407161" duration="14734000" />
       <workItem from="1605491232373" duration="4479000" />
-      <workItem from="1605498250750" duration="10250000" />
+      <workItem from="1605498250750" duration="20262000" />
     </task>
     <servers />
   </component>
@@ -105,10 +114,10 @@
       <screen x="72" y="28" width="1848" height="1052" />
     </state>
     <state x="779" y="312" width="424" height="480" key="FileChooserDialogImpl/72.28.1848.1052@72.28.1848.1052" timestamp="1605491370641" />
-    <state x="791" y="479" width="329" height="145" key="NewPhpFileDialog" timestamp="1605508153831">
+    <state x="791" y="479" width="319" height="145" key="NewPhpFileDialog" timestamp="1605519190932">
       <screen x="72" y="28" width="1848" height="1052" />
     </state>
-    <state x="791" y="479" width="329" height="145" key="NewPhpFileDialog/72.28.1848.1052@72.28.1848.1052" timestamp="1605508153831" />
+    <state x="791" y="479" width="319" height="145" key="NewPhpFileDialog/72.28.1848.1052@72.28.1848.1052" timestamp="1605519190932" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1605419953222">
       <screen x="72" y="28" width="1848" height="1052" />
     </state>
