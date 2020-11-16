@@ -19,19 +19,22 @@ require "nav.php";
 ?>
 
 <section id="iniciarSesion">
+<div id='form-login'>
+    <img src="img/icon-login.png" alt="user">
     <form action="loginLogica.php" method="post">
         <div class="form-group">
-            <label for="exampleInputEmail1">Usuario</label>
+            
             <input type="text" name="emailBd" class="form-control" id="exampleInputEmail1" placeholder="Ingrese usuario">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" name="passBd" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <input type="password" name="passBd" class="form-control" id="exampleInputPassword1" placeholder="Ingrese contraseña">
+            <a href="#">¿Olvidaste tu contraseña?</a>
         </div>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
     </form>
-    <a href="registroVista.php">Registrarse</a>
+    <span>¿No tienes cuenta? </span> <a href="registroVista.php">Registrarse</a>
+</div>
+
 </section>
 
 <footer>

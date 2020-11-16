@@ -8,7 +8,6 @@
     </ul>
     <form action="loginL.php" class="login" method="post">
         <?php
-        session_start();
         function saludo (){
             $nombre=substr($_SESSION["nombre"],0);
             $varAux= strlen($nombre)-1;

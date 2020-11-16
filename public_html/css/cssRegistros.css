@@ -1,4 +1,31 @@
-#registro{
-    background-color: deepskyblue;
-    height: 500px;
+
+#registro {
+    border-top: rgba( 35, 103, 148 ,1) solid 9px;
+   border-bottom: rgba( 35, 103, 148 ,1) solid 9px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url("../img/fondo-registro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#form-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4%;
+    width: 600px;
+    background-color: rgba(255, 255, 255, .6);
+    padding: 3rem;
+}
+#form-registro form{
+    flex-basis: 100%;
+    width: 450px;
+}
+#form-registro h2{
+    text-align: center;
+    margin-bottom: 25px;
 }
