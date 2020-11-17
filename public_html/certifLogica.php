@@ -17,13 +17,13 @@
             //GUARDAR EN REALIZADOS
             //                                                 **********        DESCOMENTAR          **************
             //                                                     ESTE IF AL TERMINAR DE DESARROLLAR EL EXAMEN
-            /*if (!fwrite($archivoDatos,$_SESSION["user"]."\n")){
+            if (!fwrite($archivoDatos,$_SESSION["user"]."\n")){
                 echo "ERROR AL ESCRIBIR ARCHIVO TEST REALIZADOS";
-            }*/
+            }
             //PUEDE REALIZAR EL EXAMEN
         }else{
             // YA FUE REALIZADO
-            header("Location: certificaciones.php");
+            header("Location: certificaciones.php?varbl=trueX#seccion2-1");
         }
     }
     fclose($archivoDatos);

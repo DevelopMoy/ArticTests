@@ -22,7 +22,7 @@ function Header()
 	// Título
 	$this->Ln(60);
 	$this->SetX(125);
-	$this->Cell(30,10,'Certificación en JAVA EE',0,1,'C');
+	$this->Cell(30,10,'Certificacion en JAVA EE',0,1,'C');
 	$this->SetFont('Arial','',25);
 	$this->Ln(10);
 	$this->SetX(125);		
