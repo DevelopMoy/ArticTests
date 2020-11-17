@@ -61,6 +61,21 @@ nav {
     flex-wrap: wrap;
     box-shadow: -1px 34px 49px -28px rgba(0,0,0,0.41);
 }
+
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    background-color: #f8f8f8;
+    min-width: 135px;
+}
+
+.nav li:hover > ul {
+    display:block;
+
+}
+
+
 #nav-exam{   
     justify-content: space-around;
     position: fixed;
