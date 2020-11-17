@@ -33,7 +33,7 @@
 </section>
 <section id="seccion2-1">
     <div class="logo-c">
-        <img src="img/logo-java.jpeg" class="card-img-top" alt="...">
+        <img src="img/logo-java.jpeg" class="card-img-top imgHovJ" alt="...">
     </div>
     <div class="info-c">
         <h3>Certificado en JAVA SE</h3>
@@ -72,7 +72,7 @@
 </section>
 <section id="seccion3-1">
     <div class="logo-c">
-        <img src="img/logo-bash.jpg" class="card-img-top" alt="...">
+        <img src="img/logo-bash.jpg" class="card-img-top imgHovJ" alt="...">
     </div>
     <div class="info-c">
         <h3>Certificado en Lenguaje BASH / Linux</h3>
@@ -105,7 +105,7 @@
 </section>
 <section id="seccion4-1">
     <div class="logo-c">
-        <img src="img/asm-logo.png" class="card-img-top" alt="...">
+        <img src="img/asm-logo.png" class="card-img-top imgHovJ" alt="...">
     </div>
     <div class="info-c">
         <h3>Certificado en Lenguaje ASM (Assembly)</h3>

@@ -19,6 +19,7 @@
         if (!$archivoEscrit = fopen("../data/regExamenes.txt","a+")){
             echo "ERROR AL ABRIR ARCHIVO ESCRITURA";
         }else{
+            $_SESSION["fechaEx"]=date("d/m/o");
             $datosNuevExam="***\n".$_SESSION["nombre"]."Java\n".(($aciertos*100)/6)."\n".($aciertos>=4?"aprobado":"reprobado")."\n".date("d/m/o")."\n".date("H:i:s")."\n";
             if (!fwrite($archivoEscrit,$datosNuevExam)){
                 echo "ERROR AL ESCRIBIR ARCHIVO";

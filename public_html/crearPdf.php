@@ -1,4 +1,5 @@
 <?php
+session_start();
 require('pdf/fpdf.php');
 
 
@@ -40,7 +41,7 @@ function Header()
 	$this->SetTextColor(0,0,0);
 	$this->Ln(10);
 	$this->SetX(27);	
-	$this->Write(7,'Ha contestado satisfactoriamente el examen de Certificación en JAVA EE, con ello demuestra las                                        competencias en el desarrollo con este lenguaje para sus futuros proyectos ');
+	$this->Write(7,'Ha contestado satisfactoriamente el examen de Certificacion en JAVA EE, con ello demuestra las                                        competencias en el desarrollo con este lenguaje para sus futuros proyectos.                                                                          Expedido el dia: '.date("d/m/o")." en Aguascalientes, Ags.");
     // Salto de línea
 	$this->Ln(40);
 	$this->Image('img/firma-MAR.png',27,160,80,50);

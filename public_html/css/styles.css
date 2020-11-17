@@ -480,3 +480,7 @@ footer p{
 textarea .form-control{
     width: 50px;
 }
+
+.imgHovJ:hover{
+    transform: scale(1.1);
+}

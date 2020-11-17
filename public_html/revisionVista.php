@@ -35,11 +35,13 @@
             echo "<img src='img/aprobado.png' alt='reprobadoImg'>";
             echo "<h2>¡Felicidades! Has aprobado la certificación</h2>";
             echo "<p>Calificación: ".$_SESSION["califJava"]."</p>";
+            echo "<p>Hay una fuerza motriz más poderosa que el vapor, la electricidad y la energía atómica: la voluntad.  Albert Einstein</p>";
             echo "<form action='crearPdf.php' target='_blank' method='post'><input type='hidden' name ='nombrCert' value='".$_SESSION["nombre"]."'><button class='btn btn-primary' type:'submit' name ='nombrCert' value='".$_SESSION["nombre"]."' >Descargar certificado</button>
             </form>";
         }else{
             echo "<img src='img/reprobado.png' alt='reprobadoImg'>";
             echo "<h2>Lo sentimos, no has aprobado.</h2>";
+            echo "<p style='color: midnightblue';> La perseverancia puede transformar el fracaso en un logro extraordinario (Matt Biondi)</p>";
             echo "<p>Calificación: ".$_SESSION["califJava"]."</p>";
 
         }
