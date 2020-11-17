@@ -1,8 +1,13 @@
+
+h1{
+    font-family: 'Raleway', sans-serif;
+}
 #logoNav{
     width: 150px;
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 .mainLogo{
 padding: 15px 0 15px;
     margin-right: 15px;
@@ -459,8 +464,4 @@ footer p{
 }
 textarea .form-control{
     width: 50px;
-}
-
-#contenedorResultados{
-    margin-top: 300px;
 }

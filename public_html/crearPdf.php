@@ -22,12 +22,16 @@ function Header()
 	// Título
 	$this->Ln(60);
 	$this->SetX(125);
-	$this->Cell(30,10,'Certificacion en JAVA EE',0,1,'C');
+	$this->Cell(30,10,'Certificación en JAVA EE',0,1,'C');
 	$this->SetFont('Arial','',25);
 	$this->Ln(10);
 	$this->SetX(125);		
 	$this->Cell(30,10,'ArticDevCo oficialmente certifica que:',0,1,'C');
-	$this->SetFont('Arial','B',35);
+	if(strlen($nombre)<=30){
+			$this->SetFont('Arial','B',35);
+	}else{
+		$this->SetFont('Arial','B',25);
+	}
 	$this->SetTextColor(6,57,113);
 	$this->Ln(10);
 	$this->SetX(125);	
@@ -36,7 +40,7 @@ function Header()
 	$this->SetTextColor(0,0,0);
 	$this->Ln(10);
 	$this->SetX(27);	
-	$this->Write(7,'Ha contestado satisfactoriamente el examen de Certificacion en JAVA EE, con ello demuestra las                                        competencias en el desarrollo con este lenguaje para sus futuros proyectos ');
+	$this->Write(7,'Ha contestado satisfactoriamente el examen de Certificación en JAVA EE, con ello demuestra las                                        competencias en el desarrollo con este lenguaje para sus futuros proyectos ');
     // Salto de línea
 	$this->Ln(40);
 	$this->Image('img/firma-MAR.png',27,160,80,50);
