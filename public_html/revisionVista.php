@@ -24,14 +24,15 @@
 
 <div id="contenedorResultados">
     <?php
-        if ($_SESSION["estadoExamen"]=="aprobado"){
+        if (($_SESSION["estadoExamen"]=="aprobado")){
             echo "<img src='img/aprobado.png' alt='reprobadoImg'>";
-            echo "<p>Felicidades! Has aprobado la certificación</p>";
+            echo "<h2>¡Felicidades! Has aprobado la certificación</h2>";
             echo "<p>Calificación: ".$_SESSION["califJava"]."</p>";
-            echo "<form action='crearPdf.php' target='_blank' method='post'><input type='hidden' name ='nombrCert' value='".$_SESSION["nombre"]."'><input type='submit' value='Descargar Certificado'></form>";
+            echo "<form action='crearPdf.php' target='_blank' method='post'><input type='hidden' name ='nombrCert' value='".$_SESSION["nombre"]."'><button class='btn btn-primary' type:'submit' name ='nombrCert' value='".$_SESSION["nombre"]."' >Descargar certificado</button>
+            </form>";
         }else{
             echo "<img src='img/reprobado.png' alt='reprobadoImg'>";
-            echo "<p>Lo sentimos, no has aprobado</p>";
+            echo "<h2>Lo sentimos, no has aprobado.</h2>";
             echo "<p>Calificación: ".$_SESSION["califJava"]."</p>";
         }
 
@@ -40,5 +41,4 @@
 
 </body>
 </html>
-
 
