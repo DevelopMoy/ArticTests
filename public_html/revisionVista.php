@@ -34,6 +34,7 @@
             echo "<img src='img/reprobado.png' alt='reprobadoImg'>";
             echo "<h2>Lo sentimos, no has aprobado.</h2>";
             echo "<p>Calificación: ".$_SESSION["califJava"]."</p>";
+
         }
 
     ?>

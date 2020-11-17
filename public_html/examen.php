@@ -17,7 +17,7 @@ require "certifLogica.php";
 <body>
     <nav id="nav-exam">
         <img id=logoNav src="img/Copia de logoSinIceberg.png" alt="logo">
-        <h1>Examen de certificación JAVA SE</h1>
+        <h1>Examen de certificación JAVA SE - Tiempo: <span id="timeTest">0:0:0</span></h1>
         <form action="">
             <button type="button" id="botonEnviar" class="btn-lg btn-outline-danger">Terminar</button>
         </form>
@@ -91,6 +91,23 @@ require "certifLogica.php";
         botonEnviar.onclick=()=>{
             formExamen.submit();
         };
+
+        timeTest="";
+        hrs=0,seg=0,min=0;
+        etiquetaTime=document.querySelector("#timeTest");
+
+        setInterval(()=>{
+            seg++;
+            if (seg===60){
+                min++;
+                seg=0;
+            }
+            if (min===60){
+                min=0;
+                hrs++;
+            }
+            etiquetaTime.innerHTML=hrs+":"+min+":"+seg;
+        },1000,"Javascript")
     </script>
 </body>
 </html>
