@@ -460,3 +460,7 @@ footer p{
 textarea .form-control{
     width: 50px;
 }
+
+#contenedorResultados{
+    margin-top: 300px;
+}

@@ -1,11 +1,18 @@
 <?php
 require('pdf/fpdf.php');
 
+
 class PDF extends FPDF
 {
 // Cabecera de página
 function Header()
 {
+    $nombre=$_POST["nombrCert"];
+    for ($i=0;$i<strlen($nombre);$i++){
+        if ($nombre[$i]=='_'){
+            $nombre[$i]=' ';
+        }
+    }
     // Logo
    $this->Image('img/LogoPrincipal.png',110,0,70,70);
     // Arial bold 15
@@ -24,7 +31,7 @@ function Header()
 	$this->SetTextColor(6,57,113);
 	$this->Ln(10);
 	$this->SetX(125);	
-	$this->Cell(30,10,'Pancho Perez',0,1,'C');
+	$this->Cell(30,10,$nombre,0,1,'C');
 	$this->SetFont('Arial','',15);
 	$this->SetTextColor(0,0,0);
 	$this->Ln(10);

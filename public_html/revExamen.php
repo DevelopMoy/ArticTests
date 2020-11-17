@@ -24,6 +24,9 @@
                 echo "ERROR AL ESCRIBIR ARCHIVO";
             }
             fclose($archivoEscrit);
+            $_SESSION["estadoExamen"]=($aciertos>=4?"aprobado":"reprobado");
+            $_SESSION["califJava"]=round(($aciertos*100)/6,2);
+            header("Location: revisionVista.php");
         }
     }
 
