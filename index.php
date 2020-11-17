@@ -15,9 +15,15 @@ session_start();
 <body>
 <nav class="" style="" >
   <a class="mainLogo" href="#"><img id=logoNav src="public_html/img/Copia de logoSinIceberg.png" alt="logo"></a>
-    <ul class="list-nav">
+    <ul class="nav">
         <li><a href="#">Inicio</a></li>
-        <li><a href="public_html/certificaciones.php">Certificaciones</a></li>
+        <li><a href="public_html/certificaciones.php">Certificaciones</a>
+            <ul>
+                <li><a href="public_html/certificaciones.php#seccion2-1">JavaSE</a></li>
+                <li><a href="public_html/certificaciones.php#seccion3-1">Bash</a></li>
+                <li><a href="public_html/certificaciones.php#seccion4-1">Assembly</a></li>
+            </ul>
+        </li>
         <li><a href="public_html/contacto.php">Contacto</a></li>
         <li><a href="public_html/conocenos.php">Acerca de</a></li>
     </ul>

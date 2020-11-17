@@ -1,8 +1,14 @@
 <nav class="" style="" >
     <a class="mainLogo" href="../index.php"><img id=logoNav src="img/Copia de logoSinIceberg.png" alt="logo"></a>
-    <ul class="list-nav">
+    <ul class="nav">
         <li><a href="../index.php">Inicio</a></li>
-        <li><a href="certificaciones.php">Certificaciones</a></li>
+        <li><a href="certificaciones.php">Certificaciones</a>
+            <ul>
+                <li><a href="certificaciones.php#seccion2-1">JavaSE</a></li>
+                <li><a href="certificaciones.php#seccion3-1">Bash</a></li>
+                <li><a href="certificaciones.php#seccion4-1">Assembly</a></li>
+            </ul>
+        </li>
         <li><a href="contacto.php">Contacto</a></li>
         <li><a href="conocenos.php">Acerca de</a></li>
     </ul>
